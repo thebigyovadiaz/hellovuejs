@@ -1,1 +1,44 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="Una página web desarrollada con Bootstrap - Vue.js 2">
+    <meta name="author" content="Yovanny Diaz">
+    <link rel="icon" href="">
+    <title>Hello World with Vue.js 2</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- VueJS -->
+    <script src="js/vue.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="app" class="container">
+      {{ hello }}
+    </div>
+
+    <script type="text/javascript">
+      var vm = new Vue({
+        el: '#app',
+        data: {
+          hello: 'Hello World con Vue.js 2';
+        }
+      });
+    </script>    
+  </body>
+</html>
